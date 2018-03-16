@@ -12,5 +12,5 @@ def line(katz_deli_line)
     end
   end
 
-  "The line is currently:" + current_line
+  puts "The line is currently:" + current_line
 end
