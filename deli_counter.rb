@@ -6,10 +6,14 @@ def line(katz_deli_line)
   if katz_deli_line.length == 0
     puts "The line is currently empty."
   else
-    #"The line is currently: 1. Logan 2. Avi 3. Spencer"
     katz_deli_line.each_with_index do |customer, idx|
       current_line += " #{idx + 1}. #{customer}"
     end
     puts "The line is currently:" + current_line
   end
+end
+
+def take_a_number(katz_deli_line, name)
+  person_position = katz_deli_line.index(name)
+  puts "Welcome, #{name}. You are number #{person_position + 1} in line."
 end
