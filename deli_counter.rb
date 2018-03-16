@@ -7,9 +7,10 @@ def line(katz_deli_line)
     puts "The line is currently empty."
   else
     #"The line is currently: 1. Logan 2. Avi 3. Spencer"
-    katz_deli_line.each do |customer, idx|
+    katz_deli_line.each_with_index do |customer, idx|
       current_line += " #{idx + 1}. #{customer}"
-      "The line is currently:" + current_line
     end
   end
+
+  "The line is currently:" + current_line
 end
